@@ -13,9 +13,7 @@
   </head>
 <body>
 	<div class="container sin_sesion">
-        <?php 
-            include ('postEncabezadoMenu.php');
-        ?>
+        <?php include ('postEncabezadoMenu.php');?>
 		<p class="text-justify h3">En cuanto el administrador le informe que ya aperturó una sesión, favor de dar clic en el botón: "Realizar evalúación"</p>
 		<br>
         

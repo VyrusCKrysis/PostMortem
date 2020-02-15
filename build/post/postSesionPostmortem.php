@@ -39,21 +39,7 @@
   </head>
   <body>
 
-    <?php 
-      include ("../php/conexion.php");
-
-      while ($fila = mysqli_fetch_array($resultado)){
-        $estatus_sesion = $fila['estatus_sesion'];
-        $IDsesion = $fila ['IDsesion'];
-        $fecha_sesion = $fila['fecha_sesion'];
-      }
-
-      if (isset($fecha_sesion) == "") {
-        $fecha_sesion_encabezado = "Sin sesion abierta";
-      } else {
-        $fecha_sesion_encabezado = $fecha_sesion;
-      } 
-     ?>
+    <?php include '../php/funcionSesionPostmortem.php';?>
     <div class="container">
       
       <div class="row header">
@@ -70,7 +56,7 @@
       </div>
       
       
-      <form action="postEnviaEncuesta.php" method="POST">
+      <form action="../php/postEnviaEncuesta.php" method="POST">
         <div class="row body">
           <div class="cont1 col-md-4 col-sm-12">
             <div class="circulo1  text-center">
