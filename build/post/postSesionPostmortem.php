@@ -39,15 +39,13 @@
   </head>
   <body>
 
-    <?php include '../php/funcionSesionPostmortem.php';?>
+    <?php include ('../php/funcionSesionPostmortem.php'); ?>
     <div class="container">
       
       <div class="row header">
         <br>
         <br>
-        <?php 
-          include ('postEncabezadoMenu.php');
-        ?>
+        <?php include ('postEncabezadoMenu.php'); ?>
         <p class="h3 text-justify">En la sesión de postmotem del día: <strong> 
           <?php 
             echo $fecha_sesion_encabezado;

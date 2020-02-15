@@ -2,7 +2,7 @@
 <?php 
 
 //Llamamos a la conexión a la base de datos
-include ("../php/conexion.php");
+include ("conexion.php");
 
 //Recibimos datos del formulario
 $fecha_sesion = $_POST['fecha_sesion'];
@@ -47,12 +47,12 @@ if (buscaSesionesDuplicadas() == 1){
 		if (!$resultado){
 			echo'<script type="text/javascript">
 			  alert("Error al crear la sesión, vuelve a intentarlo");
-			  window.location.href="postAdminEncuesta.php";
+			  window.location.href="../post/postAdminEncuesta.php";
 			  </script>';
 		} else {
 		echo'<script type="text/javascript">
 			  alert("Sesión creada correctamente");
-			  window.location.href="postAdminEncuesta.php";
+			  window.location.href="../post/postAdminEncuesta.php";
 			  </script>';
 		}
 		}
@@ -60,7 +60,7 @@ if (buscaSesionesDuplicadas() == 1){
 }
 
 function buscaSesionesDuplicadas(){
-	include ("../php/conexion.php");
+	include ("conexion.php");
 	$validaSesiones = mysqli_query($conexion, "select estatus_sesion from sesiones where estatus_sesion = 1");
 	if(mysqli_num_rows($validaSesiones) > 0){
 		return 1;

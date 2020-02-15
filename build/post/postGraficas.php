@@ -21,16 +21,16 @@
             <div class="container">
             <br>
 
-            <?php include '../php/funcionGraficas1.php';?>
+            <?php include ('../php/funcionGraficas1.php'); ?>
 
             <div id="container" style=""></div>
 
-                <?php include '../php/funcionGraficas2.php';?>
+                <?php include ('../php/funcionGraficas2.php'); ?>
 
                 <div class="row">
                     <p class="h6">Fecha que actualmente se está graficando: 
                         <strong>
-                            <?php include '../php/funcionGraficas3.php';?>
+                            <?php include ('../php/funcionGraficas3.php'); ?>
                         </strong>
                     </p>
                 </div>

@@ -13,7 +13,7 @@
 <body>
 	<div class="container">
 		<div class="menu-total">
-			<?php include '../php/funcionPostTotal.php';?>
+			<?php include ('../php/funcionPostTotal.php'); ?>
 
 		</div>
 		

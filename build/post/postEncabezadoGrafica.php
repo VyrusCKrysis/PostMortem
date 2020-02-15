@@ -18,25 +18,27 @@
         <script src="../code/modules/exporting.js"></script>
         <script src="../code/modules/export-data.js"></script>
 
-        <div class="container">
-        <br>
+            <div class="container">
+                <br>
 
-        <!--Enviamos por POST desde este formulario el parámetro de fecha-->
-        <form action = "postGraficas.php" method = "POST">
-            <div class="row">
-                <div class="etiqueta col-md-8 col-sm-12 text-center">
-                    <label for="seleccionaFecha" class="h3 seleccionaFecha">Selecciona la fecha a graficar: </label>
-                </div>
-                            
-                <div class="calendario col-md-2 col-sm-12 input-group input-group-prepend">
-                    <input class= "border border-success rounded" type="date" id="fecha" name ="fecha" required="required">    
-                </div>
+                <!--Enviamos por POST desde este formulario el parámetro de fecha-->
+                <form action = "postGraficas.php" method = "POST">
+                    <div class="row">
+                        <div class="etiqueta col-md-8 col-sm-12 text-center">
+                            <label for="seleccionaFecha" class="h3 seleccionaFecha">Selecciona la fecha a graficar: </label>
+                        </div>
 
-                <div class="boton col-md-2 col-sm-12 ">
-                    <button type="submit" class="btn btn-success btn-lg active btn-block">Buscar</button>
-                </div>
-            </div>                              
-        </form>
-        <br>
+                        <div class="calendario col-md-2 col-sm-12 input-group input-group-prepend">
+                            <input class= "border border-success rounded" type="date" id="fecha" name ="fecha" required="required">    
+                        </div>
+
+                        <div class="boton col-md-2 col-sm-12 ">
+                            <button type="submit" class="btn btn-success btn-lg active btn-block">Buscar</button>
+                        </div>
+                    </div>                              
+                </form>
+                <br>
+            </div>
+        </div>
 	</body>
 </html>

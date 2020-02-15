@@ -1,7 +1,7 @@
 <?php 
 
 //Llamamos a la conexión a la base de datos
-include ("../php/conexion.php");
+include ("conexion.php");
 while ($fila = mysqli_fetch_array($resultado)){
       $estatus_sesion = $fila['estatus_sesion'];
       $IDsesion = $fila ['IDsesion'];
@@ -12,7 +12,7 @@ while ($fila = mysqli_fetch_array($resultado)){
 	if (isset($estatus_sesion) == 0) {
 		echo'<script type="text/javascript">
 	    alert("Ninguna sesión está abierta, no puedes actualizar sesiones cerradas");
-	    window.location.href="postTotal.php";
+	    window.location.href="../post/postTotal.php";
 	    </script>';
 	} else {
 		//Recibimos datos del formulario
@@ -30,12 +30,12 @@ while ($fila = mysqli_fetch_array($resultado)){
 		if (!$resultado){
 			echo'<script type="text/javascript">
 		  	alert("Error  al guardar datos, vuelve a intentarlo");
-		   	window.location.href="postTotal.php";
+		   	window.location.href="../post/postTotal.php";
 		    </script>';
 		} else {
 			echo'<script type="text/javascript">
 		    alert("Datos guardados correctamente");
-		    window.location.href="postTotal.php";
+		    window.location.href="../post/postTotal.php";
 		    </script>';
 		}
 

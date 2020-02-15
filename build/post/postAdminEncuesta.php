@@ -47,7 +47,7 @@
       <p class= "h2 text-center">Las siguientes sesiones se encuentran activas.</p>
       <br>
       
-      <?php include '../php/funcionAdminEncuesta.php';?>
+      <?php include ('../php/funcionAdminEncuesta.php') ;?>
       
       <table class="table">
         <thead class="thead-dark text-center">
