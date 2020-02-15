@@ -1,5 +1,5 @@
 <?php 
-				include ('../post/postEncabezadoMenu.php');
+				include ('postEncabezadoMenu.php');
 				
 				//Código PHP para ver sesiones activas 
       			include ("conexion.php");

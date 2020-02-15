@@ -1,5 +1,5 @@
 <?php
     //Incluímos los encabezados a usar
-    include ('../post/postEncabezadoMenu.php');
-    include ('../post/postEncabezadoGrafica.php');
+    include ('postEncabezadoMenu.php');
+    include ('postEncabezadoGrafica.php');
 ?>

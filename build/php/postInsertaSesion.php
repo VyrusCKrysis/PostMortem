@@ -47,12 +47,12 @@ if (buscaSesionesDuplicadas() == 1){
 		if (!$resultado){
 			echo'<script type="text/javascript">
 			  alert("Error al crear la sesión, vuelve a intentarlo");
-			  window.location.href="../post/postAdminEncuesta.php";
+			  window.location.href="postAdminEncuesta.php";
 			  </script>';
 		} else {
 		echo'<script type="text/javascript">
 			  alert("Sesión creada correctamente");
-			  window.location.href="../post/postAdminEncuesta.php";
+			  window.location.href="postAdminEncuesta.php";
 			  </script>';
 		}
 		}

@@ -39,7 +39,7 @@
   </head>
   <body>
 
-    <?php include ('../php/funcionSesionPostmortem.php'); ?>
+    <?php include ('funcionSesionPostmortem.php'); ?>
     <div class="container">
       
       <div class="row header">
@@ -54,7 +54,7 @@
       </div>
       
       
-      <form action="../php/postEnviaEncuesta.php" method="POST">
+      <form action="postEnviaEncuesta.php" method="POST">
         <div class="row body">
           <div class="cont1 col-md-4 col-sm-12">
             <div class="circulo1  text-center">

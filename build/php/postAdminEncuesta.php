@@ -26,7 +26,7 @@
         include ('postEncabezadoMenu.php');
        ?>
       
-      <form action="../php/postInsertaSesion.php" method="POST">
+      <form action="postInsertaSesion.php" method="POST">
         <div class="form-group">
           <label for="exampleInputEmail1">Estatus</label>
           <input type="number" class="form-control" id="estatus" aria-describedby="dateSesion" name = "estatus" placeholder="1" readonly="readonly">
@@ -47,7 +47,17 @@
       <p class= "h2 text-center">Las siguientes sesiones se encuentran activas.</p>
       <br>
       
-      <?php include ('../php/funcionAdminEncuesta.php') ;?>
+      <!--Código PHP para ver sesiones activas-->
+      <?php  
+      //Traemos la conexión de la base de datos
+      include ("conexion.php");
+
+      //Validamos que no existan sesiones activas
+      $sesionesActivas = mysqli_query($conexion, "select IDsesion, fecha_sesion, estatus_sesion from sesiones where estatus_sesion = 1");
+        
+      
+      ?>
+      <!--Fin de código PHP de sesiones activas-->
       
       <table class="table">
         <thead class="thead-dark text-center">
@@ -78,7 +88,7 @@
       </table>
       
       <br>
-      <form action="../php/postEliminaSesion.php" method="POST">       
+      <form action="postEliminaSesion.php" method="POST">       
         <button type="submit" class="btn btn-danger btn-lg cerrarSesion"> Cerrar Sesión <i class="fas fa-trash-alt"></i></button>
       </form>
       <br>

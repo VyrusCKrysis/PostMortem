@@ -12,7 +12,7 @@
     <title>Postmortem - BOC BestDay</title>
   </head>
   <body>
-    <?php include ('../php/funcionAccesoEncuesta.php'); ?>
+    <?php include ('funcionAccesoEncuesta.php'); ?>
 
     <script src = " https://unpkg.com/sweetalert/dist/sweetalert.min.js " > </script>
     <!-- Optional JavaScript -->

@@ -15,12 +15,12 @@
       if (isset($estatus_sesion) == 1){
         echo'<script type="text/javascript">
         alert("Bienvenido al sistema de lecciones aprendidas");
-        window.location.href="../post/postSesionPostmortem.php";
+        window.location.href="postSesionPostmortem.php";
         </script>';
       } else {
         echo'<script type="text/javascript">
         alert("No existe sesión abierta, favor de contactar al administrador");
-        window.location.href="../post/postSinSesion.php";
+        window.location.href="postSinSesion.php";
         </script>';
 
       //Cerramos la conexión
