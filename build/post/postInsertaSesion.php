@@ -2,7 +2,7 @@
 <?php 
 
 //Llamamos a la conexión a la base de datos
-include ("conexion.php");
+include ("../php/conexion.php");
 
 //Recibimos datos del formulario
 $fecha_sesion = $_POST['fecha_sesion'];
@@ -60,7 +60,7 @@ if (buscaSesionesDuplicadas() == 1){
 }
 
 function buscaSesionesDuplicadas(){
-	include ("conexion.php");
+	include ("../php/conexion.php");
 	$validaSesiones = mysqli_query($conexion, "select estatus_sesion from sesiones where estatus_sesion = 1");
 	if(mysqli_num_rows($validaSesiones) > 0){
 		return 1;

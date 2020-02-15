@@ -7,16 +7,16 @@
 
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css" integrity="sha384-SI27wrMjH3ZZ89r4o+fGIJtnzkAnFs3E4qz9DIYioCQ5l9Rd/7UAa8DHcaL8jkWt" crossorigin="anonymous">
-        <link rel="stylesheet" href="css/estilos.css">
+        <link rel="stylesheet" href="../css/estilos.css">
         <script src="https://kit.fontawesome.com/ad0b402f87.js" crossorigin="anonymous"></script>
 
 	<title>Posmortem BOC BestDay</title>
 	</head>
 	<body>
     <div class="container"> 
-        <script src="code/highcharts.js"></script>
-        <script src="code/modules/exporting.js"></script>
-        <script src="code/modules/export-data.js"></script>
+        <script src="../code/highcharts.js"></script>
+        <script src="../code/modules/exporting.js"></script>
+        <script src="../code/modules/export-data.js"></script>
 
         <div class="container">
         <br>
@@ -37,8 +37,8 @@
                 $fechaSeleccionBuscar = date("y-m-d", strtotime($fechaSeleccionada));
                 
                 //Generamos una nueva conexión a la base de datos.
-                $conexion = mysqli_connect('localhost', 'root', '');
-                mysqli_select_db($conexion, 'postmortem_bestday');
+                $conexion = mysqli_connect('localhost', 'id7158476_root', '123456789');
+                mysqli_select_db($conexion, 'id7158476_postmortem');
                 
                 //Ejecutamos el query para validar que la fecha solicitada exista y la validamos con el mysqli_num_rows.
                 $validaFecha = mysqli_query($conexion, "select fecha_sesion from sesiones where fecha_sesion = '$fechaSeleccionBuscar'");

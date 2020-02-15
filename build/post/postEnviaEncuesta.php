@@ -1,7 +1,7 @@
 <?php 
 
 //Llamamos a la conexión a la base de datos
-include ("conexion.php");
+include ("../php/conexion.php");
 while ($fila = mysqli_fetch_array($resultado)){
       $estatus_sesion = $fila['estatus_sesion'];
       $IDsesion = $fila ['IDsesion'];

@@ -7,7 +7,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css" integrity="sha384-SI27wrMjH3ZZ89r4o+fGIJtnzkAnFs3E4qz9DIYioCQ5l9Rd/7UAa8DHcaL8jkWt" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="build/css/estilos.css">
     <script src="https://kit.fontawesome.com/ad0b402f87.js" crossorigin="anonymous"></script>
     <title>Postmortem - BOC BestDay</title>
 </head>
@@ -21,10 +21,10 @@
 		
 		<div class="row botones">
 			<div class="encuesta col-md-6 text-center col-xs-12 ">
-				<a href="postAccesoEncuesta.php" class="btn btn-success btn-lg btn-block">ACCESO A ENCUESTA <i class="fas fa-edit"></i></a>
+				<a href="build/post/postAccesoEncuesta.php" class="btn btn-success btn-lg btn-block">ACCESO A ENCUESTA <i class="fas fa-edit"></i></a>
 			</div>
 			<div class="acceso col-md-6 text-center col-xs-12">
-				<a href="postAdminEncuesta.php" class="btn btn-dark btn-lg btn-block">APERTURA DE SESIONES <i class="fas fa-users-cog"></i></a>
+				<a href="build/post/postAdminEncuesta.php" class="btn btn-dark btn-lg btn-block">APERTURA DE SESIONES <i class="fas fa-users-cog"></i></a>
 			</div>
 		</div>
 	</div>

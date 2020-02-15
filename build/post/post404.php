@@ -8,7 +8,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css" integrity="sha384-SI27wrMjH3ZZ89r4o+fGIJtnzkAnFs3E4qz9DIYioCQ5l9Rd/7UAa8DHcaL8jkWt" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="../css/estilos.css">
     <script src="https://kit.fontawesome.com/ad0b402f87.js" crossorigin="anonymous"></script>
     <title>Postmortem - BOC BestDay</title>
   </head>
@@ -29,7 +29,7 @@
 
 			<div class="volver col-md-12">
 				
-				<a href="#" type="text" class="btn btn-success btn-lg" value ="Regresar a Inicio" onclick="eventoAlerta()"> Regresar a Inicio <i class="fas fa-home"></i></a>
+				<a href="../../index.php" type="text" class="btn btn-success btn-lg" value ="Regresar a Inicio" onclick="eventoAlerta()"> Regresar a Inicio <i class="fas fa-home"></i></a>
 
 				
 			</div>

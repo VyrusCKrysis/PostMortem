@@ -7,7 +7,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css" integrity="sha384-SI27wrMjH3ZZ89r4o+fGIJtnzkAnFs3E4qz9DIYioCQ5l9Rd/7UAa8DHcaL8jkWt" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="../css/estilos.css">
     <script src="https://kit.fontawesome.com/ad0b402f87.js" crossorigin="anonymous"></script>
     <title>Postmortem - BOC BestDay</title>
   </head>
@@ -15,7 +15,7 @@
     <!--Validación de estatus de sesión-->
     <?php 
       //Traemos la conexión de la base de datos
-      include ("conexion.php");
+      include ("../php/conexion.php");
 
       //Con el while tremos todos los campos del primer registro que tenga estatus 1
       while ($fila = mysqli_fetch_array($resultado)){
@@ -42,7 +42,6 @@
 
       ?>
 
-    </div>
     <script src = " https://unpkg.com/sweetalert/dist/sweetalert.min.js " > </script>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

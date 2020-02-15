@@ -1,7 +1,7 @@
 <?php 
 
 //Traemos la conexión de la base de datos
-include ('conexion.php');
+include ('../php/conexion.php');
 
 //Validamos que en realidad haya sesiones abiertas
 if (buscaSesionesDuplicadas () == 0){
@@ -32,7 +32,7 @@ if (buscaSesionesDuplicadas () == 0){
 	}
 
 	function buscaSesionesDuplicadas (){
-		include ("conexion.php");
+		include ("../php/conexion.php");
 		$validaSesiones = mysqli_query($conexion, "select estatus_sesion from sesiones where estatus_sesion = 1");
 		if(mysqli_num_rows($validaSesiones) > 0){
 			return 1;
