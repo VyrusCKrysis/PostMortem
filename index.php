@@ -21,10 +21,10 @@
 		
 		<div class="row botones">
 			<div class="encuesta col-md-6 text-center col-xs-12 ">
-				<a href="build/post/postAccesoEncuesta.php" class="btn btn-success btn-lg btn-block">ACCESO A ENCUESTA <i class="fas fa-edit"></i></a>
+				<a href="build/php/postAccesoEncuesta.php" class="btn btn-success btn-lg btn-block">ACCESO A ENCUESTA <i class="fas fa-edit"></i></a>
 			</div>
 			<div class="acceso col-md-6 text-center col-xs-12">
-				<a href="build/post/postAdminEncuesta.php" class="btn btn-dark btn-lg btn-block">APERTURA DE SESIONES <i class="fas fa-users-cog"></i></a>
+				<a href="build/php/postAdminEncuesta.php" class="btn btn-dark btn-lg btn-block">APERTURA DE SESIONES <i class="fas fa-users-cog"></i></a>
 			</div>
 		</div>
 	</div>
