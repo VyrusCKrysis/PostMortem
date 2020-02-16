@@ -7,7 +7,7 @@ include ('conexion.php');
 if (buscaSesionesDuplicadas () == 0){
 	echo'<script type="text/javascript">
 	      alert("No existen sesiones abiertas");
-	      window.location.href="admin.php";
+	      window.location.href="postAdminEncuesta.php";
 	      </script>';
 }
 
