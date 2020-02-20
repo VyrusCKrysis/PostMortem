@@ -1,5 +1,5 @@
-<?php
-    <!--Validación de estatus de sesión-->
+
+    //Validación de estatus de sesión
     <?php 
       //Traemos la conexión de la base de datos
       include ("conexion.php");
@@ -28,4 +28,3 @@
       }
 
       ?>
-?>
