@@ -14,9 +14,9 @@
 	</head>
 	<body>
     <div class="container"> 
-        <script src="../code/highcharts.js"></script>
-        <script src="../code/modules/exporting.js"></script>
-        <script src="../code/modules/export-data.js"></script>
+        <script src="../js/code/highcharts.js"></script>
+        <script src="../js/code/modules/exporting.js"></script>
+        <script src="../js/code/modules/export-data.js"></script>
 
             <div class="container">
             <br>
