@@ -13,7 +13,11 @@
   </head>
 <body>
 	<div class="container sin_sesion">
+		
+	<!-- Se llama al metodo del encabezado del menu de tipo php -->
         <?php include ('postEncabezadoMenu.php'); ?>
+		
+		<!-- se generan las alertas  -->
 		<p class="text-justify h3">En cuanto el administrador le informe que ya aperturó una sesión, favor de dar clic en el botón: "Realizar evalúación"</p>
 		<br>
         
@@ -22,12 +26,7 @@
             <div class="evaluacion col-md-6 col-xs-12 text-center">
                 <a href="../../index.php" class="btn btn-success btn-lg btn-block"> Realizar evaluación <i class="fas fa-pen"></i></a>
             </div>
-    		
-            <!--
-            <div class="inicio col-md-6 text-center">
-                <a href="index.php" class="btn btn-dark btn-lg"> Volver a Inicio <i class="fas fa-home"></i></a>
-    	   </div>
-            -->
+    	
        </div>
 	</div>
 
