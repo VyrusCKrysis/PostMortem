@@ -10,12 +10,15 @@
     <link rel="stylesheet" href="../css/estilos.css">
     <script src="https://kit.fontawesome.com/ad0b402f87.js" crossorigin="anonymous"></script>
 
+    
     <script>
+      //inicializacion de las variables var en ceros
       var si = 0;
       var parcial = 0;
       var no =0;
 
 
+      //verficacion medinate los contador 
       function contadorSi(){
         si = si + 1;
         document.getElementById("contador_clic").value = si;
@@ -39,12 +42,15 @@
   </head>
   <body>
 
-    <?php include ('funcionSesionPostmortem.php'); ?>
+
+    <?php include ('funcionSesionPostmortem.php'); 
+    
     <div class="container">
       
       <div class="row header">
         <br>
         <br>
+        
         <?php include ('postEncabezadoMenu.php'); ?>
         <p class="h3 text-justify">En la sesión de postmotem del día: <strong> 
           <?php 
@@ -54,8 +60,10 @@
       </div>
       
       
-      <form action="postEnviaEncuesta.php" method="POST">
+      
+      <form action="postEnviaEncuesta.php" method="POST"> 
         <div class="row body">
+          //se le da formato
           <div class="cont1 col-md-4 col-sm-12">
             <div class="circulo1  text-center">
               <a href="#" type="" onclick="contadorSi()"><h1>Si</h1></a>
