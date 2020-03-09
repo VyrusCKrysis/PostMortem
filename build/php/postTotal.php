@@ -13,6 +13,7 @@
 <body>
 	<div class="container">
 		<div class="menu-total">
+			<!-- se llama a la funcion post total para realizar el proceso -->
 			<?php include ('funcionPostTotal.php'); ?>
 
 		</div>
@@ -34,6 +35,7 @@
 			    </tr>
 			  </thead>
 			  <tbody class="text-center">
+				  <!-- mediante una funcion de tipo php se hace la validacion de las sesiones activas -->
 			  	<?php 
 		        	while ($fila = mysqli_fetch_array($sesionesActivas)){
 		        		$idSesion =  $fila['IDsesion'];
@@ -52,6 +54,7 @@
 		        		
 		        ?>
 			    <tr>
+				    <!-- se imprimen los datos en formato de tabla -->
 			      <th scope="row"><?php echo $idSesion; ?></th>
 			      <td><?php echo $fecha_sesion; ?></td>
 			      <td><?php echo $totalSi  ?></td>
