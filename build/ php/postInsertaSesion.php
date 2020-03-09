@@ -1,19 +1,21 @@
 
 <?php 
 
-//Llamamos a la conexión a la base de datos
+//Conexion con la base de datos mediante el archivo conexion.php
 include ("conexion.php");
 
 //Recibimos datos del formulario
 $fecha_sesion = $_POST['fecha_sesion'];
-//$fecha_sesion = date('ymd');
+//Insersion de fecha con el formato especificado
 $fecha_sesion_insertar = date("y-m-d", strtotime($fecha_sesion));; 
-//Fecha de hoy
+//Se obtiene la fecha catual del sistema
 $fecha_actual = date('y-m-d');
 
+//se realiza la validacion de que se ha seleccionado una fecha de sesion valida
 $validaFechaInsercion = mysqli_query($conexion, "select fecha_sesion from sesiones where fecha_sesion = '$fecha_sesion_insertar'");
 if(mysqli_num_rows($validaFechaInsercion) > 0){
 	echo'<script type="text/javascript">
+	//se manda un mensaje en caso de que la fecha selecconada ya exista en la base de datos
       alert("Ya existe una sesión con la fecha que deseas crear, no puedes crear dos sesiones para la misma fecha!");
       window.history.back();
       </script>';
@@ -37,7 +39,7 @@ if (buscaSesionesDuplicadas() == 1){
 	} 
 	else {
 
-		//Realizamos la consulta de la query
+		//Realizamos la consulta
 		$insertar = "insert into sesiones (fecha_sesion, estatus_sesion) values ('$fecha_sesion_insertar', '1')";
 	
 		//Ejecutamos Query
